@@ -1,50 +1,146 @@
+Html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mathematics | BrainLeaf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainLeaf | Student Notes</title>
+
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f7fb;
-      padding: 20px;
+      color: #333;
     }
-    h1 {
-      color: #2c7be5;
+
+    header {
+      background: #2c7be5;
+      color: white;
+      padding: 25px;
+      text-align: center;
     }
-    .note {
+
+    nav {
       background: white;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 15px;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    a {
-      color: #2c7be5;
+
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
+      color: #2c7be5;
       font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #2c7be5;
+    }
+
+    .card button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      border: none;
+      background: #2c7be5;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
-<a href="index.html">← Back to Home</a>
+<header>
+  <h1>🌿 BrainLeaf</h1>
+  <p>Simple notes that help students grow</p>
+</header>
 
-<h1>📘 Mathematics Notes</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="notes.html">Notes</a>
+  <a href="english.html">About</a>
+</nav>
 
-<div class="note">
-  <h3>Algebra</h3>
-  <p>Algebra deals with variables, expressions, and equations.</p>
+<div class="container">
+
+  <div class="intro">
+    <h2>Welcome to BrainLeaf</h2>
+    <p>
+      BrainLeaf is a student-friendly website that provides
+      easy, clear, and well-organized notes for learning.
+    </p>
+  </div>
+
+  <div class="cards">
+
+    <div class="card">
+      <h2>📘 Mathematics</h2>
+      <p>Formulas, concepts, and solved examples.</p>
+      <a href="maths.html"><button>View Notes</button></a>
+    </div>
+
+    <div class="card">
+      <h2>🔬 Science</h2>
+      <p>Physics, Chemistry, and Biology notes.</p>
+      <a href="science.html"><button>View Notes</button></a>
+    </div>
+
+    <div class="card">
+      <h2>💻 Computer</h2>
+      <p>Basics of computers, coding, and technology.</p>
+      <a href="Ai.html"><button>View Notes</button></a>
+    </div>
+
+    <div class="card">
+      <h2>📖 English</h2>
+      <p>Grammar, writing skills, and literature.</p>
+      <a href="english.html"><button>View Notes</button></a>
+    </div>
+
+  </div>
+
 </div>
 
-<div class="note">
-  <h3>Geometry</h3>
-  <p>Geometry is the study of shapes, lines, and angles.</p>
-</div>
-
-<div class="note">
-  <h3>Important Formula</h3>
-  <p>(a + b)² = a² + 2ab + b²</p>
-</div>
+<footer>
+  © 2025 BrainLeaf | Made for students 🌱
+</footer>
 
 </body>
-</html> 
+</html>
